@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<widget id="fifi.adventure" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="fifi.adventure" android-versionCode="1" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Fifi's Adventure</name>
 	<description>fifi adventure</description>
 	<author href="www.fifiadv.com" email="fifiadv@gmail.com">Fatwimah</author>
@@ -13,16 +13,14 @@
 	<preference name="fullscreen" value="true" />
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="AllowInlineMediaPlayback" value="true" />
-
-	<config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist"><true/></config-file>
-	<config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist"><false/></config-file>
-
+ 
 
 	<preference name="deployment-target" value="10.0" />
 	<preference name="android-minSdkVersion" value="21" />
 	<access origin="*" />
 
 	<plugin name="cordova-custom-config" />
+	<plugin name="admob-fixing-cordova" spec="https://github.com/mukeshphulwani66/admob-fixing-cordova.git"  />
 	<plugin name="cordova-plugin-file" />
 	<plugin name="cordova-plugin-inappbrowser" />
 	<plugin name="cordova-plugin-statusbar" />
@@ -30,6 +28,5 @@
 	<plugin name="cordova-plugin-wkwebview-engine" />
 
 
-	<engine name="ios" />
-	<engine name="android" />
+ 	<engine name="android" />
 </widget>
